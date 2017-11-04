@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+/*34.-Hacer un programa que lea las calificaciones de un alumno en 10 asignaturas, las 
+ * almacene en un vector y calcule e imprima su media.
+ */
+public class Ejercicio34 {
+
+	public static void main(String[] args) {
+		int[] calificaciones = new int[5];
+		int media = 0;
+
+		String[] asignaturas = { "matematicas", "ingles", "lengua", "programacion", "ingles" };
+		Scanner teclado = new Scanner(System.in);
+		for (int i = 0; i < calificaciones.length; i++) {
+			System.out.println("Escribe la nota de Daniel en:" + asignaturas[i]);
+			calificaciones[i] = teclado.nextInt();
+			media = media + calificaciones[i];
+		}
+		media= media/2;
+		System.out.println("la nota media es:");
+
+	}
+
+}
