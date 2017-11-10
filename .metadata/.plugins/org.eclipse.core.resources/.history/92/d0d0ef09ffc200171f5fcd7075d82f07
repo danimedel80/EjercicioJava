@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+//2. Dada una frase de no más de 80 caracteres hacer un programa que busque cuántas mayúsculas y minúsculas tiene y lo imprima
+
+public class String2 {
+	public static void main(String[] args) {
+		
+		String frase =" ";
+		Scanner teclado=new Scanner (System.in);
+		System.out.println("Escribe una frase");
+		 do {
+			 frase=teclado.nextLine();
+			
+		} while (frase.length()<0 || frase.length()>80);
+		
+		
+	}
+
+}

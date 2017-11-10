@@ -46,6 +46,7 @@
 <workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1509723666586_2" label="Strings" name="Strings">
 <item elementID="=String 1" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 <item elementID="=String2" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=String3" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 </workingSet>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1507397919528_0" label="Window Working Set" name="Aggregate for window 1507397919528"/>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1509723732064_3" label="Multiple Working Sets" name="Aggregate:Primeros ejercicios:Strings:">
