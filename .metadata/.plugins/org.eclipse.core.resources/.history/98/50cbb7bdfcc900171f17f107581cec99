@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class Examen {
+public static void main(String[] args) {
+	Scanner teclado=new Scanner (System.in);
+	String caracter="*";
+	int numero=0;
+	System.out.println("Introduce un número");
+	
+	numero=teclado.nextInt();
+	System.out.println("N"+"="+numero);
+	System.out.println(caracter);
+	
+	for (int i = 0; i < numero; i++) {
+		System.out.println("N"+"="+numero);
+		
+		caracter.equals(caracter.concat(caracter));
+		
+	}
+	
+}
+}

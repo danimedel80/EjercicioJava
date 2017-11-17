@@ -1,0 +1,46 @@
+import java.util.Scanner;
+
+public class StringDNIresuelto {
+	public static void main(String[] args) {
+		
+		String Tabla = "TRWAGMYFPDXBNJZSQVHLCKE";
+		String resultado = "";
+		String frase = "";
+		int error = 1, resto = 0;
+		Scanner teclado = new Scanner(System.in);
+		do {
+			System.out.println("Introduce un DNI/NIE al completo.");
+			frase = teclado.nextLine();
+			frase = frase.toUpperCase();
+		} while (frase.length() != 9);
+		if (frase.charAt(0)=='X'){ // Modificamos el valor de la letra inicial del NIE.
+			error = 0;
+			resultado = "0" + frase.substring(1, frase.length()-1); 
+		}
+		if (frase.charAt(0)=='Y'){ // Modificamos el valor de la letra inicial del NIE.
+			error = 0;
+			resultado = "1" + frase.substring(1, frase.length()-1);
+		}
+		if (frase.charAt(0)=='Z'){ // Modificamos el valor de la letra inicial del NIE.
+			error = 0;
+			resultado = "2" + frase.substring(1, frase.length()-1);
+		}
+		if (frase.charAt(0) >= '0' || frase.charAt(0)<='9'){
+			error = 0;
+			resultado = frase.substring(0, frase.length()-1);}
+		if (error == 1) {
+			System.out.println("El dni no tiene el formato adecuado");
+		}
+		if (error == 0){
+			resto = Integer.valueOf(resultado)%23;
+			if(frase.charAt(8)==Tabla.charAt(resto)){
+				System.out.println("La letra es correcta.");
+			}
+			else{
+				System.out.println("La letra es incorrecta");
+		
+	}
+		}
+	}
+
+}

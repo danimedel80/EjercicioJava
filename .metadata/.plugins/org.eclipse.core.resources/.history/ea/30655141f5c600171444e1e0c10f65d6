@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+//String Tabla = "TRWAGMYFPDXBNJZSQVHLCKE";
+public class Español {
+	public static void main(String[] args) {
+		Scanner teclado=new Scanner (System.in);
+		String dni;
+		int entero;
+		
+		do {
+			System.out.println("Introduce tu dni");
+			dni=teclado.nextLine();
+		} while (dni.length()!=9);
+		
+		entero=Integer.valueOf(dni.substring(0,7));
+		System.out.println(entero);
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}

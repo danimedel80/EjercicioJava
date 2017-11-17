@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+//String Tabla = "TRWAGMYFPDXBNJZSQVHLCKE";
+public class Español {
+	public static void main(String[] args) {
+		Scanner teclado=new Scanner (System.in);
+		String dni;
+		
+		do {
+			System.out.println("Introduce tu dni");
+			dni=teclado.nextLine();
+			
+			
+		} while (dni.length()!=9);
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}

@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+//ejercicio DNi
+public class DNIdefinitivo {
+	public static void main(String[] args) {
+		Scanner teclado=new Scanner (System.in);
+		String Tabla ="TRWAGMYFPDXBNJZSQVHLCKE";
+		String uno ="0123456789XYZ";
+		String dni;
+		boolean correcto=false;
+		int entero, posicionletra, extranjero, posicionletra2;
+		do {
+			System.out.println("Introduce tu dni");
+			
+			dni=teclado.nextLine().toUpperCase();
+			if (dni.length()==9 ) {
+				correcto=true;
+			}
+			
+		
+			
+		} while (correcto==false);
+		
+	}
+
+}

@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+//Extranjero X=0 Y=1 Z=2
+public class Extranjero {
+	public static void main(String[] args) {
+		Scanner teclado=new Scanner (System.in);
+		String Tabla ="TRWAGMYFPDXBNJZSQVHLCKE";
+		String dni;
+		int entero, posicionletra, extranjero;
+		
+		
+		do {
+			System.out.println("Introduce tu dni");
+			dni=teclado.nextLine();
+			dni=dni.toUpperCase();
+		} while (dni.length()!=9);
+		dni=dni.toUpperCase();
+		extranjero=Integer.valueOf(dni.substring(1,8));
+		System.out.println(extranjero);
+		
+		if (dni.charAt(0)=='X') {
+			
+		}
+		
+	}
+
+}

@@ -1,0 +1,42 @@
+import java.util.Scanner;
+
+//repaso
+public class Repaso {
+	public static void main(String[] args) {
+		String frase, frase2, palabra="vaca";
+		char caracter;
+		int posicion=0;
+		
+		Scanner teclado = new Scanner(System.in);
+		System.out.println("Introduce una frase");
+		frase=teclado.nextLine();
+		
+		/*caracter=frase.charAt(2);
+		System.out.println(caracter);*/
+		
+		/*System.out.println("Introduce segunda frase");
+		frase2=teclado.nextLine();
+		if (frase.equals(frase2)) {
+			System.out.println("es verdadero");
+		}
+		else {
+			System.out.println("Es falso");
+		}*/
+		
+		while (posicion != -1) {
+			posicion = frase.indexOf(palabra, posicion);
+		
+				System.out.println("La palabra esta en la posición" + posicion);
+			
+				posicion++;
+			
+		}
+	
+					
+		
+		
+		
+		
+	}
+
+}

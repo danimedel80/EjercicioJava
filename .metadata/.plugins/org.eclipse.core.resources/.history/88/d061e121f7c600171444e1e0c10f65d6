@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+
+public class Español {
+	public static void main(String[] args) {
+		Scanner teclado=new Scanner (System.in);
+		String dni;
+		int entero, posicionletra;
+		String Tabla = "TRWAGMYFPDXBNJZSQVHLCKE";
+		
+		do {
+			System.out.println("Introduce tu dni");
+			dni=teclado.nextLine();
+		} while (dni.length()!=9);
+		
+		entero=Integer.valueOf(dni.substring(0,8));
+		System.out.println(entero);
+		posicionletra=entero%23;
+		//if (dni.charAt(9).equals(Tabla.charAt(posicionletra)) {
+			System.out.println(dni.charAt(9));
+			System.out.println(Tabla.charAt(posicionletra));
+		}
+		
+		
+		
+		
+		
+		
+		
+	}
+
+
